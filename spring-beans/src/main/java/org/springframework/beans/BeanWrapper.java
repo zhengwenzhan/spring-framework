@@ -35,11 +35,11 @@ import java.beans.PropertyDescriptor;
  * 获取属性描述符，并查询属性的可读可写性
  * get property descriptors, and query the readability/writability of properties.
  *
- *
  * 这个接口执行嵌套的属性,可以在无限地设置子属性（应该是递归的意思）
  * <p>This interface supports <b>nested properties</b> enabling the setting
  * of properties on subproperties to an unlimited depth.
  *
+ * 一个BeanWrapper关于为编辑器提取旧值的默认设置是false，避免getter方法被调用的副作用。设置为true暴露当前的属性值给定制的编辑器。
  * <p>A BeanWrapper's default for the "extractOldValueForEditor" setting
  * is "false", to avoid side effects caused by getter method invocations.
  * Turn this to "true" to expose present property values to custom editors.

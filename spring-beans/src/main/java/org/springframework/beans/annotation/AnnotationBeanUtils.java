@@ -37,6 +37,9 @@ import org.springframework.util.StringValueResolver;
 public abstract class AnnotationBeanUtils {
 
 	/**
+	 *
+	 * 拷贝提供的Annotation的属性到所提供的bean中，在excludedProperties指定的属性都不会被复制。
+	 *
 	 * Copy the properties of the supplied {@link Annotation} to the supplied target bean.
 	 * Any properties defined in {@code excludedProperties} will not be copied.
 	 * @param ann the annotation to copy from
